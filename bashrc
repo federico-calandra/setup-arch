@@ -1,3 +1,5 @@
+## Questo file viene letto ogni volta che si lancia la shell
+
 # Customizza prompt
 RED="\[$(tput setaf 5)\]"
 RESET="\[$(tput sgr0)\]"

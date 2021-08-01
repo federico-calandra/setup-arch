@@ -1,5 +1,7 @@
 #!/bin/sh
 
+## Questo file viene letto quando si lanica il comando 'startx'
+
 userresources=$HOME/.Xresources
 usermodmap=$HOME/.Xmodmap
 sysresources=/etc/X11/xinit/.Xresources
