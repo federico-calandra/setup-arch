@@ -4,7 +4,7 @@
 ## ESEGUIRE IN AMBIENTE LIVE
 ##
 
-read -p "formatta e monta (manuale)"
+# L'hard disk deve essere già partizionato e formattato opportunamente
 # mount /dev/sdXy /mnt; mkswap /dev/swap_part; swapon /dev/swap_part; mkfs.ext4 /dev/sdXy
 
 read -p "imposta ororlogio"
@@ -21,7 +21,8 @@ read -p "installa pacchetti networking"
 pacstrap /mnt inetutils openssh x11vnc
 
 read -p "installa pacchetti desktop"
-pacstrap /mnt xorg xorg-xinit openbox tint2 gmrun rxvt-unicode thunar thunar-volman thunar-media-tags-plugin redshift
+pacstrap /mnt xorg xorg-xinit openbox tint2 gmrun rxvt-unicode redshift
+# pacstrap /mnt thunar thunar-volman thunar-media-tags-plugin
 
 read -p "genera fstab"
 genfstab -U /mnt >> /mnt/etc/fstab
