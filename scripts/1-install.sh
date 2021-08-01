@@ -15,8 +15,7 @@ pacstrap /mnt linux linux-firmware intel-ucode base base-devel grub sudo
 
 read -p "installa pacchetti di tools essenziali"
 pacstrap /mnt cpupower thermald turbostat
-pacstrap /mnt nano ntfs-3g usbutils android-udev gvfs
-pacstrap /mnt git
+pacstrap /mnt nano ntfs-3g usbutils android-udev gvfs os-prober git
 
 read -p "installa pacchetti networking"
 pacstrap /mnt inetutils openssh x11vnc
