@@ -4,14 +4,15 @@
 ## ESEGUIRE IN AMBIENTE LIVE
 ##
 
-# L'hard disk deve essere già partizionato e formattato opportunamente
+# L'hard disk deve essere stato partizionato. La partizione formattata in ext4 e montata in /mnt
 # mount /dev/sdXy /mnt; mkswap /dev/swap_part; swapon /dev/swap_part; mkfs.ext4 /dev/sdXy
 
 read -p "imposta ororlogio"
 timedatectl set-timezone Europe/Rome; timedatectl set-ntp true
 
 read -p "installa pacchetti di base"
-pacstrap /mnt linux linux-firmware intel-ucode base base-devel grub sudo
+pacstrap /mnt linux linux-firmware amd-ucode base base-devel grub sudo
+pacstrap  /mnt efibootmgr
 
 read -p "installa pacchetti di tools essenziali"
 pacstrap /mnt cpupower thermald turbostat

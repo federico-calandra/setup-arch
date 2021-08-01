@@ -4,6 +4,8 @@
 ##ESEGUI IN AMBIENTE CHROOT
 ##
 
+## In UEFI bisogna montare la partizione EFI su /mnt
+
 read -p 'imposta orologio'
 ln -sf /usr/share/zoneinfo/Europe/Rome
 hwclock --systohc
@@ -16,9 +18,9 @@ read -p 'password root'
 passwd; wait
 
 read -p 'grub'
-mount /dev/sda2 /mnt
+mount /dev/sda1 /mnt
 os-prober
-grub-install /dev/sda; grub-mkconfig -o /boot/grub/grub.cfg
+grub-install --efi-directory=/mnt; grub-mkconfig -o /boot/grub/grub.cfg
 
 read -p 'esci chroot'
 exit
