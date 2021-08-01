@@ -18,7 +18,7 @@ pacstrap /mnt cpupower thermald turbostat
 pacstrap /mnt nano ntfs-3g usbutils android-udev gvfs os-prober git
 
 read -p "installa pacchetti networking"
-pacstrap /mnt inetutils openssh x11vnc
+pacstrap /mnt inetutils openssh x11vnc networkmanager nm-connection-editor network-manager-applet
 
 read -p "installa pacchetti desktop"
 pacstrap /mnt xorg xorg-xinit openbox tint2 gmrun rxvt-unicode redshift
