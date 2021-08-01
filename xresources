@@ -1,0 +1,83 @@
+!! Font prefferenes
+URxvt.font:     xft:freemono:size=13:antialias=true
+URxvt.boldFont: xft:freemono:bold:size=13:antialias=true
+urxvt.letterSpace: -2
+
+
+!! Change font size on Control-Plus/Minus
+!URxvt.keysym.Control-0x2b: perl:font-size:increase
+!URxvt.keysym.Control-0x2d: perl:font-size:decrease
+
+!Xft settings:
+
+Xft*dpi:                96
+Xft*hinting:            true
+! hintstyle 3 for flat-panel displays 
+Xft*hintstyle:          2
+Xft*antialias:          true
+! uncomment/adjust for flat-panel display
+Xft*rgba:              rgb
+
+
+! URxvt settings
+urxvt.termName:          rxvt-unicode
+urxvt.scrollBar:         true
+URxvt.scrollstyle:       plain 
+!URxvt*scrollBar_right:  true
+URxvt.buffered:          true
+URxvt.perl-ext:          default,matcher
+URxvt.urlLauncher:       /usr/bin/firefox
+URxvt.matcher.button:    1 
+URxvt.transparent:       True
+URxvt.shading:           25
+URxvt.background:        #2b2b2b
+URxvt.foreground:        #4db41e
+URxvt.cursorColor:       #aaaaaa
+URxvt.colorUL:           #366060
+URxvt.underlineColor:    #dfaf8f
+URxvt.color0:            #2b2b2b
+URxvt.color1:            #cc9393
+URxvt.color2:            #7f9f7f
+URxvt.color3:            #d0bf8f
+URxvt.color4:            #6ca0a3
+URxvt.color5:            #dc8cc3
+URxvt.color6:            #93e0e3
+URxvt.color7:            #dcdccc
+URxvt.color8:            #000000
+URxvt.color9:            #dca3a3
+URxvt.color10:           #bfebbf
+URxvt.color11:           #f0dfaf
+URxvt.color12:           #8cd0d3
+URxvt.color13:           #dc8cc3
+URxvt.color14:           #93e0e3
+URxvt.color15:           #ffffff
+
+!! Larger history limit
+urxvt.saveLines: 1000000
+
+!! Perl extensions
+urxvt.perl-ext-common: default,matcher,tabbed
+!font-size
+
+!! Open urls in browser with Control-Click
+urxvt.urlLauncher: /usr/bin/firefox
+urxvt.matcher.button: C1
+
+
+! http://blog.ssokolow.com/archives/2011/05/01/modernizing-xterms-paste/
+! {{{ Quick Reference
+!
+! Scrolling:
+!   Scroll Wheel
+!   Shift-PgUp/PgDn
+!
+! Copy/Paste:
+!   Mouse-Select        : Copy to PRIMARY
+!   Shift + Mouse-Select: Copy to CLIPBOARD
+!
+!   Middle-Click        : Paste from PRIMARY
+!   Shift + Middle-Click: Paste from CLIPBOARD
+!
+!   Ctrl+Shift+V        : Paste from CLIPBOARD
+!   Ctrl+Alt+Shift+V    : Paste from PRIMARY
+!

@@ -1,0 +1,4 @@
+smb://admin@router/usb2_sda1/ router
+sftp://f@notebook1:2202/ notebook1
+sftp://user@notebook2:2203/ notebook2
+ftp://b12_15659619@ftpupload.net/ byethost

@@ -1,0 +1,13 @@
+tint2 &
+nm-applet &
+pasystray &
+#powerkit &
+#system-config-printer-applet &
+#mynotes
+
+setxkbmap it &
+xrdb -load .xresources &
+#xbindkeys &
+
+#redshift &
+#xwallpaper --center /usr/share/wallpaper.jpg
