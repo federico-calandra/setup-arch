@@ -24,7 +24,10 @@ read -p "Installa sys apps"
 pacman -S htop  gparted cups cups-pdf
 
 read -p "Installa accessori"
-pacman -S leafpad geequie engrampa geeqie vlc redshift firefox thunderbird transmission-qt qpdfview
+pacman -S mousepad engrampa vlc redshift firefox thunderbird transmission-qt
+
+read -p "Installa multimedia"
+pacman -S geeqie qpdfview
 
 read -p "Servizio printer"
 #nano /etc/cups/cups-pdf.config
