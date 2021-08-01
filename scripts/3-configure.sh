@@ -32,10 +32,10 @@ read -p 'Sudoers'
 cp ../sudoers /etc/sudoers; nano /etc/sudoers; wait; chmod 400 /etc/sudoers
 
 read -p "Configura spazio utente"
-cp ../profile /home/
-cp ../bashrc /home/
-cp ../xinitrc /home/
-#cp xresources /home
+cp ../profile /home/; mv /home/xinitrc /home/.profile
+cp ../bashrc /home/; mv /home/bashrc /home/.bashrc
+cp ../xinitrc /home/;mv /home/xinitrc /home/.xinitrc
+#cp xresources /home/; mv /home/rexresources /home/.xresources
 nano ~/.xinitrc; wait
 # mkdir ~/.config/openbox; cp autostart ~/.config/openbox/autostart
 chown f /home /mnt /opt -R
