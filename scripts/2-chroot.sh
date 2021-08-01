@@ -12,7 +12,7 @@ hwclock --systohc
 
 read -p 'genera hostname e hosts'
 touch /etc/hostname; nano /etc/hostname; wait
-cp ./hosts /etc/hosts; nano /etc/hosts; wait
+cp ../hosts /etc/hosts; nano /etc/hosts; wait
 
 read -p 'password root'
 passwd; wait

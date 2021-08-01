@@ -29,16 +29,16 @@ useradd -d /home -s /bin/bash f
 passwd f; wait
 
 read -p 'Sudoers'
-cp ./sudoers /etc/sudoers; nano /etc/sudoers; wait; chmod 400 /etc/sudoers
+cp ../sudoers /etc/sudoers; nano /etc/sudoers; wait; chmod 400 /etc/sudoers
 
 read -p "Configura spazio utente"
-cp ./profile ~/.profile
-cp ./bashrc ~/.bashrc
-cp ./xinitrc ~/.xinitrc
-#cp xresources ~/.xresources
+cp ../profile /home/
+cp ../bashrc /home/
+cp ../xinitrc /home/
+#cp xresources /home
 nano ~/.xinitrc; wait
 # mkdir ~/.config/openbox; cp autostart ~/.config/openbox/autostart
-chown f /dati /home /mnt /opt -R
+chown f /home /mnt /opt -R
 
 read -p 'Reboot'
 #reboot
