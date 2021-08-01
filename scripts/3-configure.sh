@@ -36,7 +36,7 @@ cp ../profile /home/; mv /home/xinitrc /home/.profile
 cp ../bashrc /home/; mv /home/bashrc /home/.bashrc
 cp ../xinitrc /home/;mv /home/xinitrc /home/.xinitrc
 #cp xresources /home/; mv /home/rexresources /home/.xresources
-nano ~/.xinitrc; wait
+nano /home/.xinitrc; wait
 # mkdir ~/.config/openbox; cp autostart ~/.config/openbox/autostart
 chown f /home /mnt /opt -R
 
