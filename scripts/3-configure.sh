@@ -11,9 +11,13 @@ systemctl enable sshd
 
 read -p 'configura networking'
 read -p 'configura ssh'
-cp 20-wired.network /etc/systemd/network/
+
+## Questo e' per l'installazione minimal che si basa su networkd
+#cp 20-wired.network /etc/systemd/network/
+#systemctl enable systemd-network-d
+
+systemctl enable networkmanager
 cp ssh_config sshd_config /etc/ssh/
-systemctl enable systemd-network-d
 read -p 'configura vnc'
 x11vnc -storepasswd
 
