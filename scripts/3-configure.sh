@@ -18,6 +18,15 @@ systemctl enable NetworkManager
 read -p 'Configura ssh'
 cp ssh_config sshd_config /etc/ssh/
 
+read -p 'Configura git'
+git config --global user.name "federico"
+git config --global user.email "federico.calandra@ymail.com"
+ssh-keygen -t ed25519 -C "federico.calandra@ymail.com"
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/id_ed25519
+
+
+
 read -p 'Configura vnc'
 x11vnc -storepasswd
 

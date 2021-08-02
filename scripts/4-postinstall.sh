@@ -6,7 +6,6 @@
 
 pacman -Sy
 
-read -p "installa pacaur"
 #pacman -S expac jq
 #wget https://aur.archlinux.org/cgit/aur.git/snapshot/auracle-git.tar.gz; tar -xf auracle-git.tar.gz
 #cd auracle-git; makepkg; makepkg --install
