@@ -1,7 +1,7 @@
 #! /bin /bash
 
 ##
-## ESEGUIRE NEL SISTEMA INSTALLATO
+## ESEGUIRE AL RIAVVIO NEL SISTEMA INSTALLATO
 ##
 
 read -p 'Abilita servizi'
@@ -25,7 +25,7 @@ read -p 'Gestione energetica'
 nano /etc/systemd/logind.conf; wait
 
 read -p 'Crea utente'
-useradd -d /home -s /bin/bash f
+useradd -d /home -s /bin/zsh f
 passwd f; wait
 
 read -p 'Sudoers'
