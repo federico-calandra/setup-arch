@@ -6,15 +6,15 @@
 
 ## In UEFI bisogna montare la partizione EFI su /mnt
 
-read -p 'imposta orologio'
+read -p 'Imposta orologio'
 ln -sf /usr/share/zoneinfo/Europe/Rome
 hwclock --systohc
 
-read -p 'genera hostname e hosts'
+read -p 'Imposta hostname e configura hosts'
 touch /etc/hostname; nano /etc/hostname; wait
 cp ../hosts /etc/hosts; nano /etc/hosts; wait
 
-read -p 'password root'
+read -p 'Imposta password root'
 passwd; wait
 
 read -p 'grub'

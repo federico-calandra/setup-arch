@@ -11,7 +11,7 @@ read -p "imposta ororlogio"
 timedatectl set-timezone Europe/Rome; timedatectl set-ntp true
 
 read -p "installa pacchetti di base"
-pacstrap /mnt linux linux-firmware amd-ucode base base-devel grub sudo
+pacstrap /mnt linux linux-firmware amd-ucode base base-devel grub sudo zsh
 pacstrap  /mnt efibootmgr
 
 read -p "installa pacchetti di tools essenziali"
