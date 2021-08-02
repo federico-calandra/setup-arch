@@ -1,0 +1,18 @@
+STAMPANTE PDF CUPS
+pacman -S cups-pdf
+
+SCORCIATOIA START
+
+TRANSMISSION
+impostare cartella di download
+imposta area di notifica
+
+CONFIGURA REDSHIFT
+
+CONFIGURA THUNAR
+segnalibri ~/.config/gtk-3.0/bookmarks
+
+AGGIUNGERRE ALLO SCRIPT DI INSTALLAZIONE
+pacstrap usbutils
+
+COPIA MENU.XML E RC.XML DI OPENBOX

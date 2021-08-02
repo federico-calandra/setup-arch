@@ -1,0 +1,10 @@
+La connessione a internet si può gestire con il servizio 'systemd-networkd.service'. La configurazione si fa con file foo.network in /etc/systemd/network.
+
+In alternativa si può usare 'ip'. Occorre verificare 
+che la scheda di rete sia rilevata e gestita correttamente da udev, e 
+che il comuter si aconnesso alla rete locale con cavo ethernet. 
+Supponiamo che la scheda di rete si chiami eth0. La connessione alla rete globale passa attraverso i seguenti passi:
+	abilitare scheda di rete 'ip link set eth0 up'
+	assegnare indirizzo IP locale con 'ip address add 192.168.1.1/24 dev eth0'
+	definire gateway predefinito con 'ip route add default via 192.168.1.100'
+A questo punto la scheda di rete è identificata a livello locale e può comunicare con la rete globale attraverso il gateway. [AGGIUNGERE DNS

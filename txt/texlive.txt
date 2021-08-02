@@ -1,0 +1,2 @@
+Texlive è l'implementazione di LaTeX per sistemi UNIX. L'installer è scritto in linguaggio perl ed è reperibile su internet. Si devono selezionare i pacchetti da installare. La directory predefinita è /usr/local/texlive.
+I file binari per eseguire la compilazione si trovano in /usr/local/texlive/2021/bin/x86_64-linux, che va aggiunta a $PATH con il comando 'export PATH="$PATH:/usr/local/texlive/2021/bin/x86_64-linux"' nel file .profile

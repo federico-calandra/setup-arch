@@ -1,0 +1,1 @@
+Possono essere aggiunte funzionalità al kernel base tramite i moduli. I moduli attualmente caricati si ottengono con 'lsmod'. Informazioni su un modulo con 'modinfo'

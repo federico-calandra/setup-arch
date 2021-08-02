@@ -1,0 +1,13 @@
+Al termine del processo di boot viene eseguito login che lancia shell Bash di login su TTY. Vengono letti in ordine /etc/profile /home/.bash_profile /home/.bash_login e /home/.profile
+Al lancio di shell Bash interattiva viene letto /home/.bashrc
+
+Xorg e' un server display che mostra i flussi video delle applicazioni desktop. Per lanciarlo si usa xinit oppure un display manager. xinit si configura con /etc/X11/xinit/xinitrv oppure con /home/.xinitrc. E' indispensabile un windows manager come openbox per avviare la sessione.
+Lo standard X Desktop Group (XDG) gestisce l'esperienza desktop di Xorg indipendentemente dal desktop environemnt. Si definiscono alcuni percorsi:
+	dati user-specific: $XDG_DATA_HOME = ~/.local/share
+	configurazioni user-specific: $XDG_CONFIG_HOME = ~/.config
+	lista ordinata di cartelle di dati: $XDG_DATA_DIRS = /usr/local/share/:/usr/share/
+	lista ordinata di cartelle di configurazioni: $XDG_CONFIG_DIRS = /etc/xdg/
+	dati di cache: $XDG_CACHE_HOME = ~/.cache
+
+Si individuano alcne cartelle notevoli:
+	.desktop applicazioni installate: $XDG_DATA_DIRS/applications = /usr/share/applications

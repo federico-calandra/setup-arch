@@ -1,0 +1,5 @@
+OpenBox è un windows manager di tipo stacking. Può esser elanciato con 'openbox-session' tramite xinit.
+Può essere integrato con taskbar tint2, che comprende già il system tray.
+Si configura con il file ~/.config/rc.xml (/etc/xdg/openbox/rc.xml) mentre i menù tramite ~/.config/menu.xml (/etc/xdg/openbox/menu.xml). Vedi http://openbox.org/wiki/Help:Configuration e http://openbox.org/wiki/Help:Menus
+È possibile generare un menù dinamico in base ai file .desktop (/usr/share/applications/) con archlinux-xdg-menu.
+I temi si trovano in ~/.local/share/themes o ~/.themes (/usr/share/themes) e si caricano con 'obconf'

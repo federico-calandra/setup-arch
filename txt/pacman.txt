@@ -1,0 +1,1 @@
+In pacman esistono 3 database: database dei pacchetti installati (db locale), database dei pacchetti disponibili (db remoto), database dei files dei pacchetti installati (db files)

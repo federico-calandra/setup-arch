@@ -1,0 +1,4 @@
+udev è un sistema che permette all'amministratore di registrare gestori degli eventi (events handlers).
+Gli eventi ricevuti dal demone udev (systemd-udev.service) sono generati principalmente dal kernel in risposta a eventi di periferiche.
+Gestisce i nodi in /dev.
+Le regole udev dell'amministatore sono file .rules in /etc/udev/rules.d/ (hanno la precedenza) mentre quelle dei pacchetti installati si trovano in /usr/lib/udev/rules.d/

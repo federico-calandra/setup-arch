@@ -1,0 +1,7 @@
+'lscpu' restituisce informazioni su CPU
+'lspci' restituisce informazioni su hardware integrato nella scheda madre e periferiche PCI
+'free' restituisce informazioni sulla RAM
+'lsscsi' restituisce informazioni su dispositivi SCSI
+'lsusb' fa parte di usbutils e restituisce informazioni su periferiche USB
+'lsblk' restituisce informazioni su hard disk
+'hwinfo' restituisce infomrazioni su tutto l'hardware

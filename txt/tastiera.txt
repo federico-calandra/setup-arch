@@ -1,0 +1,9 @@
+Gli scancodes sono bytes di dati inviati dalla tastera al PC in seguito ad un evento. Nell'USB i bytes sono standardizzati, nel PS/2 ci sono 3 sets di scancodes. In Linux si possono vedere con 'showkey --scancodes' in esadecimale.
+
+Il PC provvede a tradurre scancodes in keycodes tramite una mappa (e.g. setkeycodes, ma anche tramite udev), che forniscono informazioni human-readable.
+
+I layout sono gestiti:
+A livello shell da 'loadkeys' e si trovano in /usr/share/kbd/keymaps/
+A livello desktop sono gestiti da X11 e si trovano in /usr/...
+
+I fonts della console sono gestiti da 'setfont' e si trovano in /usr/share/kbd/consolefonts/

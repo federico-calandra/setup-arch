@@ -1,0 +1,4 @@
+I sistemi UNIX prevedono cartelle per usi specifici:
+	configurazioni di sistema  /etc
+	cache dati di sistema /var/cache
+	dati di sistema /usr/share

@@ -1,0 +1,1 @@
+VNC usa la porta 5900. Un server è x11vnc che si fa partire con 'x11vnc'. Per protezione si può creare una password con 'x11vnc -storepasswd' e far partire il server con 'x11vnc -rfbauth <path>'. Quando il client termina la sessione, il server viene automaticamento stoppato. Per evitare questo usare l'opzione '-many'
