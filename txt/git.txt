@@ -1,0 +1,41 @@
+# Set nome e mail
+git config --global user.name "federico"
+git config --global user.email federico.clandra@ymail.com
+
+## Acquire and commit
+# Acquire snapshot (stored in temporary area called 'index')
+git add .
+git add <filename>
+
+# Commit acquired snapshot
+git commit -m <'commento'>
+
+# Commit file modificati
+git commit -a
+
+# Get status of repo
+git status
+
+## Branches
+# Crea branch
+git brach
+git branch <nome>
+
+# Rimuovi branch
+git branch -r <nome>
+
+# Switch branch
+git switch <nome>
+
+# Merge branch to master
+git merge <nome>
+
+## Clone, pull, push
+# Clona git
+git clone <indirizzo-remoto> <nome-cartella-mkdir>
+
+# Pull request (lo lancia owner del repo, If Alice has made her own changes in the meantime, then she may need to manually fix any conflicts.)
+git pull <indirzzo-remoto> <branch>
+
+# Push files
+git push <nome-remote> <branch-locale>
