@@ -10,6 +10,8 @@
 read -p "Imposta layout tastiera"
 loadkeys it
 
+# Per reti wireless la nnessione è con iwctl. device list, station <dev> scan, station <dev> get-networks, station <dev> connect <ssid>
+
 read -p "Imposta ororlogio"
 timedatectl set-timezone Europe/Rome; timedatectl set-ntp true
 
