@@ -20,8 +20,11 @@ passwd; wait
 read -p 'grub'
 mount /dev/sda1 /mnt
 os-prober
+# per GPT/UEFI, ma e' da verificare con la wiki
 #grub-install --efi-directory=/mnt; grub-mkconfig -o /boot/grub/grub.cfg
-#grub-install; grub-mkconfig -o /boot/grub/grub.cfg
+grub-install --target=i386-pc /dev/sda
+echo 'GRUB_DISABLE_OS_PROBER=false' >> /etc/default/grub
+grub-mkconfig -o /boot/grub/grub.cfg
 
 read -p 'esci chroot'
 exit
