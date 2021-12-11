@@ -20,7 +20,8 @@ passwd; wait
 read -p 'grub'
 mount /dev/sda1 /mnt
 os-prober
-grub-install --efi-directory=/mnt; grub-mkconfig -o /boot/grub/grub.cfg
+#grub-install --efi-directory=/mnt; grub-mkconfig -o /boot/grub/grub.cfg
+#grub-install; grub-mkconfig -o /boot/grub/grub.cfg
 
 read -p 'esci chroot'
 exit
