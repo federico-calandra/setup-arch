@@ -7,7 +7,8 @@
 # L'hard disk deve essere stato partizionato. La partizione formattata in ext4 e montata in /mnt
 # mount /dev/sdXy /mnt; mkswap /dev/swap_part; swapon /dev/swap_part; mkfs.ext4 /dev/sdXy
 
-  read -p "Imposta layout tastiera"
+read -p "Imposta layout tastiera"
+loadkeys it
 
 read -p "Imposta ororlogio"
 timedatectl set-timezone Europe/Rome; timedatectl set-ntp true
