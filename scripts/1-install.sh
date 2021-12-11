@@ -43,5 +43,3 @@ echo KEYMAP=it >> /mnt/etc/vconsole.conf
 read -p 'Entra chroot'
 arch-chroot /mnt; wait
 
-read -p 'Reboot'
-reboot
