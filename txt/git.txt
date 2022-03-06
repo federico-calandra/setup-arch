@@ -1,6 +1,6 @@
 # Set nome e mail
 git config --global user.name "federico"
-git config --global user.email federico.clandra@ymail.com
+git config --global user.email federico.calandra@ymail.com
 
 ## Acquire and commit
 # Acquire snapshot (stored in temporary area called 'index')
