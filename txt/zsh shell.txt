@@ -1,6 +1,6 @@
 Il pacchetto zsh fornisce la shell /bin/zsh. Si imposta come predefinita alla creazione di un utente oppure con 'chsh -s /bin/zsh'
 
-Al lancio, Zsh legge, in ordine:  $ZDOTDIR=$HOME
+Al lancio, Zsh legge, in ordine:  ($ZDOTDIR=$HOME)
 /etc/zsh/zshenv (sempre)
 $HOME/.zshenv (sempre)
 /etc/zsh/zprofile (come login shell)
