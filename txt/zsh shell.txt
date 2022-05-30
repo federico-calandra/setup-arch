@@ -2,12 +2,8 @@ Il pacchetto zsh fornisce la shell /bin/zsh. Si imposta come predefinita alla cr
 
 Al lancio, Zsh legge, in ordine:  ($ZDOTDIR=$HOME)
 /etc/zsh/zshenv (sempre)
-$HOME/.zshenv (sempre)
+$ZDOTDIR/.zshenv (sempre)
 /etc/zsh/zprofile (come login shell)
-$HOME/.zprofile (come login shell)
+$ZDOTDIR/.zprofile (come login shell)
 /etc/zsh/zshrc (come interattiva)
-
- (come interattiva)
-
-Zsh non legge /etc/profile (~/.profile)
-
+$ZDOTDIR/.zshrc (come interattiva)
