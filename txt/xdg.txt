@@ -10,7 +10,7 @@ $XDG_CONFIG_DIRS	cartelle configurazioni applicazioni (fallback /etc/xdg)
 $XDG_RUNTIME_DIR	file di runtime user-specific
 
 Lo standard XDG (https://specifications.freedesktop.org/desktop-entry-spec/desktop-entry-spec-latest.html) definisce anche un modo per gestire i metadati delle applicazioni installate tramite files con estensione .desktop, solitamente installati in $XDG_DATA_DIRS/applications/. Il nome del file deve essere secondo D-Bus e seguire la convenzione di reverse dns. Ogni file desktop installato in $XDG_DATA_DIRS/applications/ ha un id determinato dal percorso relativo a $XDG_DATA_DIRS, in cui si esclude /applications/ e si trasformano le / in -.
-
+(vedi anche https://specifications.freedesktop.org/menu-spec/menu-spec-latest.html)
 Di seguito un esempio di file .desktop
 
 [Desktop Entry]
