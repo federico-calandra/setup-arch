@@ -1,0 +1,10 @@
+pLo standard XDG definisce alcune variabili ambientali di cui molte applicazioni fanno uso:
+
+$XDG_DATA_HOME		data user-specific (fallback $HOME/.local/share)
+$XDG_CONFIG_HOME	configuazioni user-specific (fallback $HOME/.config)
+$XDG_STATE_HOME		state data user-specific (fallback $HOME/.local/state)
+$XDG_?				file binari user-specific (fallback $HOME/.local/bin)
+$XDG_CACHE_HOME		cache user-specific (fallback $HOME/.cache)
+$XDG_DATA_DIRS		cartelle dati applicazioni (fallback /usr/local/share/:/usr/share/)
+$XDG_CONFIG_DIRS	cartelle configurazioni applicazioni (fallback /etc/xdg)
+$XDG_RUNTIME_DIR	file di runtime user-specific

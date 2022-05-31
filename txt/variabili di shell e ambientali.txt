@@ -1,0 +1,8 @@
+Le variabili di shell sono variabili la cui risoluzione è limitata alla shell in cui sono state definite. Si definiscono con 'NOME_VARIABILE=valore'.
+
+Le variabili ambienteali hanno sono visibili anche dai processi figli. Se permangono anche dopo la chiusura della shell sono variabili permanenti. Con 'printenv' si hanno tutte le variabili ambientali (permanenti e non) della shell in corso. Il valore di una in particolare si recupera con 'printenv <VARIABILE>'. Sono del tipo
+NOME_VARIABILE=valore oppure
+NOME_VARIABILE=valore1:valore2 oppure
+NOME_VARIABILE="valore con spazio"
+
+Una variabile di shell si può convertire in ambientale non permanente tramite 'export NOME_VARIABILE'. Per renderla permanente (per l'utente corrente) basta farne l'export nel file di setupo della shell (bashrc o zshrc)
