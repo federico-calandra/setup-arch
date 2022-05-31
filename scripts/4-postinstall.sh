@@ -20,7 +20,7 @@ read -p "Audio"
 pacman -S pulseaudio pulseaudio-alsa pasystray
 
 read -p "Installa sys apps"
-pacman -S htop  gparted cups cups-pdf
+pacman -S htop gparted cups cups-pdf system-config-printer
 
 read -p "Installa accessori"
 pacman -S mousepad engrampa vlc redshift firefox thunderbird transmission-qt
