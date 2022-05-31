@@ -23,3 +23,6 @@ Exec=fooview %F
 Icon=fooview
 MimeType=image/x-foo;
 Actions=Gallery;Create;
+
+Prima di installare un file .desktop deve essere validato con 'desktop-file-validate <file>'. Se è positiva allora si installa con 'desktop-file-install --dir=<target-dir> <file>'. Dopo l'installazione si deve aggiornare il database con 'update-desktop-database -v <target-dir>'
+
