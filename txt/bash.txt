@@ -1,0 +1,5 @@
+Bash è una shell e un linguaggio di programmazione. Si interagisce con la shell tramite terminale. CI sono 4 prompt:
+	PS1
+	PS2
+	PS3 e PS4
+Ogni prompt può essere customizzato con il comando 'PSx="<stringa-custom>"'. Vedi man.archlinux.org/man/bash.1#PROMPTING per sequenze di escape. Visto che ~/.bashrc viene eseguito ad ogni sessione di shell, si può mettere il comando per redenre permanente la modifica.
