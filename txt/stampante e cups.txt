@@ -1,0 +1,5 @@
+Con CUPS si gestisce il servizio di stampa. Una volta installato si abilita il socket con cups-socket, oppure il servizio cups.service. La configurazione avviene tramite l'applicazione system-config-printer che permette di aggiungere stampanti dopo aver installato il relativo driver. Una stampante PDF è disponibile con cups-pdf. 
+
+Molti driver sono disponibili su https://www.openprinting.org/printers oppure con l'applicazione foomatic-db-engine che cerca nei database foomatic-db foomatic-db-ppds foomatic-db-nonfree foomatic-db-nonfree-ppds
+
+
