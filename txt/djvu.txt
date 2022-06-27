@@ -1,0 +1,5 @@
+Convertire immagine JPG in Djvu
+c44 immagine.jpg
+
+Inserire immagine come copertina
+djvm -i documento.djvu immagine.jpg 1
