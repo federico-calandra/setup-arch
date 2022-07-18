@@ -9,8 +9,10 @@ $XDG_DATA_DIRS		cartelle dati applicazioni (fallback /usr/local/share/:/usr/shar
 $XDG_CONFIG_DIRS	cartelle configurazioni applicazioni (fallback /etc/xdg)
 $XDG_RUNTIME_DIR	file di runtime user-specific
 
-Lo standard XDG (https://specifications.freedesktop.org/desktop-entry-spec/desktop-entry-spec-latest.html) definisce anche un modo per gestire i metadati delle applicazioni installate tramite files con estensione .desktop, solitamente installati in $XDG_DATA_DIRS/applications/. Il nome del file deve essere secondo D-Bus e seguire la convenzione di reverse dns. Ogni file desktop installato in $XDG_DATA_DIRS/applications/ ha un id determinato dal percorso relativo a $XDG_DATA_DIRS, in cui si esclude /applications/ e si trasformano le / in -.
-(vedi anche https://specifications.freedesktop.org/menu-spec/menu-spec-latest.html)
+Lo standard XDG (https://specifications.freedesktop.org/desktop-entry-spec/desktop-entry-spec-latest.html) definisce anche un modo per gestire i metadati delle applicazioni installate tramite files con estensione .desktop, solitamente installati in $XDG_DATA_DIRS/applications/. Il nome del file deve essere secondo D-Bus e seguire la convenzione di reverse dns. Ogni file desktop installato in $XDG_DATA_DIRS/applications/ ha un id determinato dal percorso relativo a $XDG_DATA_DIRS, in cui si esclude /applications/ e si trasformano le / in - (vedi anche https://specifications.freedesktop.org/menu-spec/menu-spec-latest.html)
+
+Prima di installare un file .desktop deve essere validato con 'desktop-file-validate <file>'. Dopo validazione positiva si installa con 'desktop-file-install --dir=<target-dir> <file>'. Dopo l'installazione si deve aggiornare il database con 'update-desktop-database -v <target-dir>'.
+
 Di seguito un esempio di file .desktop
 
 [Desktop Entry]
@@ -24,5 +26,4 @@ Icon=fooview
 MimeType=image/x-foo;
 Actions=Gallery;Create;
 
-Prima di installare un file .desktop deve essere validato con 'desktop-file-validate <file>'. Se è positiva allora si installa con 'desktop-file-install --dir=<target-dir> <file>'. Dopo l'installazione si deve aggiornare il database con 'update-desktop-database -v <target-dir>'
-
+Per evitare problemi di compatibilità il campo Exec dovrebbe contenere un comando valido presente in /bin/. Sono importanti le impostazioni di proprietà e permessi.
