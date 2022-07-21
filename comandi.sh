@@ -1,17 +1,22 @@
 # Pacchetti di base
-pacstrap /mnt linux linux-firmware amd-ucode base base-devel grub sudo zsh
-pacstrap  /mnt efibootmgr
+pacman -S linux linux-firmware amd-ucode base base-devel grub sudo zsh
+pacman -S efibootmgr
 
 # Tools essenziali
-pacstrap /mnt cpupower thermald turbostat
-pacstrap /mnt ntfs-3g usbutils nano wget android-udev os-prober git
+pacman -S inetutils ntfs-3g usbutils android-udev os-prober 
+pacman -S cpupower thermald turbostat
 
 # Networking
-pacstrap /mnt inetutils openssh x11vnc networkmanager nm-connection-editor network-manager-applet
+pacman -S x11vnc networkmanager nm-connection-editor network-manager-applet
 
-# Desktop
-pacstrap /mnt xorg xorg-xinit openbox tint2 gmrun rxvt-unicode redshift
-# pacstrap /mnt thunar thunar-volman thunar-media-tags-plugin
+# Applicazioni CLI
+pacman -S mc nano openssh git
+
+# X11
+pacman -S xorg xorg-xinit
+
+# Applicazioni GUI
+pacman -S pcmanfm leafpad
 
 # Grub
 mount /dev/sda1 /mnt
