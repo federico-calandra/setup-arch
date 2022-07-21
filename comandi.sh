@@ -35,6 +35,8 @@ systemctl enable sshd
 # Git
 git config --global user.name "federico"
 git config --global user.email "federico.calandra@ymail.com"
+cp id_rsa id_rsa.pub $HOME/.ssh
+chmod 400 id_rsa id_rsa.pub
 
 # Gestione energetica
 nano /etc/systemd/logind.conf; wait
