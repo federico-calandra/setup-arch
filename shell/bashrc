@@ -1,4 +1,4 @@
-## Questo file viene letto ogni volta che si lancia la shell
+## Questo file viene letto ogni volta che si lancia shell bash
 
 # Customizza prompt
 RED="\[$(tput setaf 5)\]"

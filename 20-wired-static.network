@@ -1,3 +1,5 @@
+## Copiare in /etc/systemd/network/
+
 [Match]
 Name=enp1s0
 
