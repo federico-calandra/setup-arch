@@ -61,10 +61,17 @@ alias gitu='git add . && git commit && git push'
 alias pacman="sudo pacman"
 alias ll="ls -l"
 
-# Theming section  
+## Theming section  
 autoload -U compinit colors zcalc
 compinit -d
 colors
+
+# Prompt customization
+autoload -Uz vcs_info
+precmd() { vcs_info }
+zstyle ':vcs_info:git:*' formats '_%b'
+setopt PROMPT_SUBST
+PROMPT='%F{green}%n@%M%f%F{cyan}:%~%f%F{yellow}${vcs_info_msg_0_}%f %B%(!.#.$)%b '
 
 # Color man pages
 export LESS_TERMCAP_mb=$'\E[01;32m'

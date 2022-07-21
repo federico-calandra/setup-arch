@@ -2,9 +2,13 @@
 pacman -S linux linux-firmware amd-ucode base base-devel grub sudo zsh
 pacman -S efibootmgr
 
-# Tools essenziali
-pacman -S inetutils ntfs-3g usbutils android-udev os-prober 
+# Strumenti di sistema
+pacman -S htop xscreensaver systemd-ui inetutils ntfs-3g usbutils android-udev os-prober
 pacman -S cpupower thermald turbostat
+
+# Stampa
+pacman -S cups cups-pdf system-config-printer
+systemctl enable cups.socket
 
 # Networking
 pacman -S x11vnc networkmanager nm-connection-editor network-manager-applet
@@ -16,7 +20,7 @@ pacman -S mc nano openssh git
 pacman -S xorg xorg-xinit
 
 # Applicazioni GUI
-pacman -S pcmanfm leafpad
+pacman -S pcmanfm leafpad xarchiver gparted
 
 # Grub
 mount /dev/sda1 /mnt
